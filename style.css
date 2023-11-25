@@ -1,0 +1,24 @@
+.gridCont {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    height: 41rem;
+    width: 41rem;
+    padding: 0;
+    outline: black solid 4px;
+
+}
+.grid {
+    display: flex;
+    flex: 1;
+}
+
+.cell {
+    width: 2.5rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    outline: black solid 1px;
+    background-color: white;
+}
+
+
