@@ -2,7 +2,6 @@ const gridCont = document.querySelector('.gridCont');
 let gridSize = 64;
 let gridWidthHeight = 41;
 const gridCreate = document.querySelector('#createGrid');
-const borderRemove = document.querySelector('#removeBorder');
 
 let mouseDown = false;
 document.body.onmousedown = () => (mouseDown = true);
@@ -19,10 +18,6 @@ gridCreate.addEventListener('click', () =>{
     };
 });
 
-borderRemove.addEventListener('click', () =>{
-    let cellS = document.querySelector('.cell');
-    cellS.style.outline = "0"
-});
 
 function changeColor(e){
     if (e.type === 'mouseover' && !mouseDown) return
